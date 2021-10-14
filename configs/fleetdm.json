@@ -1,12 +1,19 @@
 {
   "index_name": "fleetdm",
   "start_urls": [
-    "https://fleetdm.com/docs"
+    {
+     "url": "https://fleetdm.com/docs",
+     "tags": "docs"
+    },    
+    {
+     "url": "https://fleetdm.com/handbook",
+     "tags": "handbook"
+    }
   ],
+  "scrape_start_urls": false,
   "sitemap_urls": [
     "https://fleetdm.com/sitemap.xml"
   ],
-  "stop_urls": [],
   "selectors": {
     "lvl0": "#body-content h1",
     "lvl1": "#body-content h2",
@@ -15,7 +22,7 @@
     "lvl4": "#body-content h5",
     "lvl5": "#body-content h6",
     "text": "#body-content p, #body-content li"
-  },
+  }
   "conversation_id": [
     "1620186646"
   ],
